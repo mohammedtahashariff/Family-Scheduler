@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Scheduling App</title>
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+    <div class="calendar-container">
+        <!-- Month and Year Navigation -->
+        <div class="header">
+            <button id="prev">Previous</button>
+            <span id="month-year"></span>
+            <button id="next">Next</button>
+        </div>
+
+        <!-- Calendar Days -->
+        <div id="days" class="days"></div>
+
+        <!-- Display Today's Date -->
+        <p id="date-display"></p>
+
+        <!-- Event Form -->
+        <form id="eventForm">
+            <input type="text" id="eventName" placeholder="Event Name" required>
+            <input type="date" id="eventDate" required>
+            <button type="submit">Add Event</button>
+        </form>
+
+        <!-- Event List -->
+        <ul id="eventList"></ul>
+    </div>
+
+    <script src="calendar.js"></script>
+    <script src="calendar1.js"></script>
+</body>
+</html>
